@@ -17,3 +17,7 @@ body {
   background-color: var(--bs-light);
   color: var(--bs-dark);
 }
+
+main {
+  min-height: 500px;
+}
