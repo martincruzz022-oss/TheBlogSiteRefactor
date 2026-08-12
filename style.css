@@ -1,5 +1,19 @@
+/* Website color palette */
+:root {
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-dark: #212529;
+  --bs-light: #f8f9fa;
+  --bs-white: #ffffff;
+}
+
+/* Base document */
 html {
-    height: 100%;
-    width: 100%;
-  }
-  
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+}
