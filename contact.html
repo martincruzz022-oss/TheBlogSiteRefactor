@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About Us - The Blog Site</title>
+  <title>Contact Us - The Blog Site</title>
 
   <link href="style.css" rel="stylesheet" type="text/css">
 
@@ -48,15 +48,15 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active"
-               aria-current="page"
-               href="about.html">
+            <a class="nav-link" href="about.html">
               About Us
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">
+            <a class="nav-link active"
+               aria-current="page"
+               href="contact.html">
               Contact Us
             </a>
           </li>
@@ -89,38 +89,62 @@
         </div>
       </aside>
 
-      <!-- About content -->
+      <!-- Contact form -->
       <section class="col-md-8">
 
         <div class="card h-100">
 
           <div class="card-body">
 
-            <h2 class="card-title text-primary">
-              About Us
+            <h2 class="card-title text-primary mb-4">
+              Contact Us
             </h2>
 
-            <p class="card-text">
-              The Blog Site was created to share ideas, stories, and
-              useful information with readers.
-            </p>
+            <!-- Contact form -->
+            <form id="contactForm">
 
-            <p class="card-text">
-              Our goal is to create a simple and friendly space where
-              people can discover new topics and enjoy different kinds
-              of content.
-            </p>
+              <div class="mb-3">
+                <label for="email" class="form-label">
+                  Email address
+                </label>
 
-            <div class="p-4 bg-light border rounded mt-4">
+                <input type="email"
+                       class="form-control"
+                       id="email"
+                       placeholder="name@example.com"
+                       required>
+              </div>
 
-              <h3 class="h5 text-dark">
-                Our Purpose
-              </h3>
+              <div class="mb-3">
+                <label for="message" class="form-label">
+                  Message
+                </label>
 
-              <p class="mb-0 text-secondary">
-                We want to make information easy to discover and share.
-              </p>
+                <textarea class="form-control"
+                          id="message"
+                          rows="6"
+                          placeholder="Write your message here..."
+                          required></textarea>
+              </div>
 
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+
+            </form>
+
+            <!-- Alert -->
+            <div id="messageAlert"
+                 class="alert alert-success alert-dismissible fade mt-4"
+                 role="alert">
+              <strong>Message sent!</strong>
+              Your message has been sent successfully.
+
+              <button type="button"
+                      class="btn-close"
+                      data-bs-dismiss="alert"
+                      aria-label="Close">
+              </button>
             </div>
 
           </div>
@@ -177,7 +201,7 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+          integrity="sha384-FKyoEForClyvwxH9j09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
           crossorigin="anonymous">
   </script>
 
